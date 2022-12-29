@@ -7,9 +7,9 @@
     "build": "turbo run build --filter=app1",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "dev": "turbo run dev --filter=app1...",
-    "dev:prue": "turbo run build --filter=app1^... && turbo run dev --filter=app1",
-    "dev:prue2": "dotenv -v NODE_ENV=production -v NODE_CONFIG_ENV=dev1 -- npm run dev:prue"
+    "ddev": "turbo run dev --filter=app1...",
+    "dev": "turbo run build --filter=app1^... && turbo run dev --filter=app1",
+    "dev:e2": "dotenv -v NODE_ENV=production -v NODE_CONFIG_ENV=dev1 -- npm run dev"
   },
   "author": "",
   "license": "ISC",
