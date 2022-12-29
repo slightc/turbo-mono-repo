@@ -4,8 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "prebuild": "rimraf lib",
-    "build": "tsc && tsc-alias",
+    "build": "rimraf lib && tsc && tsc-alias",
     "dev": "npm-run-all --parallel watch:*",
     "watch:tsc": "tsc -w",
     "watch:alias": "tsc-alias -w"

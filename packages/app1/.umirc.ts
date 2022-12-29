@@ -1,5 +1,6 @@
 import { defineConfig } from 'umi';
 
+
 export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
@@ -8,4 +9,7 @@ export default defineConfig({
     { path: '/', component: '@/pages/index' },
   ],
   fastRefresh: {},
+  define: {
+    NODE_CONFIG_ENV: process.env.NODE_CONFIG_ENV,
+  }
 });

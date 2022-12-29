@@ -1,18 +1,19 @@
 {
 	"compilerOptions": {
 		"module": "commonjs",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "declaration": true,
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"strict": false,
+		"declaration": true,
 		"outDir": "lib",
 		"rootDir": "src",
 		"baseUrl": "src",
 		"paths": {
 			"@/*": [
-				"src/*"
+				"*"
 			]
 		}
 	},
